@@ -1,0 +1,53 @@
+# i3blocks config file
+
+# Global Properties
+separator_block_width=10
+markup=none
+
+
+# CPU Usage (Percentage)
+[CPU]
+label= CPU:
+command=/home/giorgiodaniele/i3-contrib/cpu_usage/cpu_usage
+interval=5
+
+# Memory Usage (Current/Total)
+[Memory]
+label= Mem:
+command=/home/giorgiodaniele/i3-contrib/memory/memory
+interval=5
+
+# Disk Usage (Available Space on /)
+[Disk]
+label= Disk:
+command=/home/giorgiodaniele/i3-contrib/disk/disk
+interval=60
+instance=/
+
+# Battery Status (Percentage and Time Remaining)
+[Battery]
+label= Batt:
+command=/home/giorgiodaniele/i3-contrib/battery/battery
+interval=10
+
+# IP Address with Netmask
+[IP]
+label= IP:
+command=/home/giorgiodaniele/i3-contrib/iface/iface
+interval=10
+
+# Volume (Percentage)
+[Volume]
+label= Vol:
+command=/home/giorgiodaniele/i3-contrib/volume/volume
+interval=1
+
+# Date and Time
+[Time]
+label= Time:
+command=date '+%Y-%m-%d %H:%M'
+interval=60
+
+label=🌡️ Temp:
+command=/home/giorgiodaniele/i3-contrib/temperature/temperature
+interval=10
